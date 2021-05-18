@@ -1,5 +1,6 @@
-import logo from './logo.svg';
 import './App.css';
+import DaysOtherDays from './DaysOtherDays/DaysOtherDays';
+import DaysOtherDaysDuplicate from './DaysOtherDaysDuplicate/DaysOtherDaysDuplicate';
 
 function App() {
   return (
@@ -49,7 +50,7 @@ function App() {
           <tr>
             <td>Before &amp; After</td>
             <td>Alphapets</td>
-            <td></td>
+            <td>Abinesh</td>
           </tr>
           <tr>
             <td>Before &amp; After</td>
@@ -67,7 +68,7 @@ function App() {
             <td></td>
           </tr>
           <tr>
-            <td>Yesterday | Today | Tomorrow</td>
+            <td>Other Days</td>
             <td>Days</td>
             <td>Vel</td>
           </tr>
@@ -78,6 +79,9 @@ function App() {
           </tr>
         </tbody>
       </table>
+      <hr></hr>
+      <DaysOtherDaysDuplicate />
+      
     </div>
   );
 }
