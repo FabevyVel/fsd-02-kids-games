@@ -1,6 +1,7 @@
 import './App.css';
 import DaysOtherDays from './DaysOtherDays/DaysOtherDays';
 import DaysOtherDaysDuplicate from './DaysOtherDaysDuplicate/DaysOtherDaysDuplicate';
+import NumSeries from './NumSeries/NumSeries';
 
 function App() {
   return (
@@ -81,7 +82,7 @@ function App() {
       </table>
       <hr></hr>
       <DaysOtherDaysDuplicate />
-      
+      <NumSeries />
     </div>
   );
 }
