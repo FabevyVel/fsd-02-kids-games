@@ -51,10 +51,10 @@ class AdditionSub extends Component{
                     check : "Woot!!!",
                     score : parseInt(this.state.score + 1)
                 });  
-                this.setState({correctAns: '(Answer is:'+ this.add()+')'})  
+                
               }, 800);
            
-           
+            this.setState({correctAns: '(Answer is:'+ this.add()+')'})  
             this.setState({viewQuestion1: this.getRandomNumber()})
             this.setState({viewQuestion2: this.getRandomNumber()})
             
@@ -70,8 +70,9 @@ class AdditionSub extends Component{
                     check : "Nope!!!",
                     score : parseInt(this.state.score - 1)
                 });
-                this.setState({correctAns: '(Correct Answer is:'+ this.add()+')'})
-            },800)        
+                
+            },800)  
+            this.setState({correctAns: '(Correct Answer is:'+ this.add()+')'})      
             this.setState({viewQuestion1: this.getRandomNumber()})
             this.setState({viewQuestion2: this.getRandomNumber()})
             
