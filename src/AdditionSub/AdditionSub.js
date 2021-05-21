@@ -50,14 +50,11 @@ class AdditionSub extends Component{
                 this.setState({
                     check : "Woot!!!",
                     score : parseInt(this.state.score + 1)
-                });  
-                
-              }, 800);
-           
-            this.setState({correctAns: '(Answer is:'+ this.add()+')'})  
+                });        
+              }, 500);
+            this.setState({correctAns: '(Answer is:'+ this.add()+')'})           
             this.setState({viewQuestion1: this.getRandomNumber()})
-            this.setState({viewQuestion2: this.getRandomNumber()})
-            
+            this.setState({viewQuestion2: this.getRandomNumber()})   
         }
         else if(this.state.result === ''){
             console.log('Enter the Value');
@@ -69,10 +66,9 @@ class AdditionSub extends Component{
                 this.setState({
                     check : "Nope!!!",
                     score : parseInt(this.state.score - 1)
-                });
-                
-            },800)  
-            this.setState({correctAns: '(Correct Answer is:'+ this.add()+')'})      
+                });   
+            },500)  
+            this.setState({correctAns: '(Correct Answer is:'+ this.add()+')'})    
             this.setState({viewQuestion1: this.getRandomNumber()})
             this.setState({viewQuestion2: this.getRandomNumber()})
             
@@ -88,6 +84,13 @@ class AdditionSub extends Component{
             randomNumber =parseInt(Math.floor(Math.random() * 10)) 
         }
         return randomNumber;
+    }
+
+    // RESET SCORE
+    handlereset = (event) => {
+        this.setState({result: ''})   
+        this.setState({score: '0'})
+        this.setState({EnterTheValue: ''})
     }
 
 
@@ -109,7 +112,7 @@ class AdditionSub extends Component{
                     </tr>
                     <tr>
                         <td>
-                            <button onClick={this.handlesubmit}>Submit</button>
+                        <button onClick={this.handlesubmit}>Submit</button>
                         </td>
                     </tr>
                     <tr>
@@ -119,7 +122,7 @@ class AdditionSub extends Component{
                     </tr>
                     <tr>
                         <td>
-                            Your Score: {this.state.score}
+                            Your Score: {this.state.score}  <button onClick={this.handlereset}>Reset Score</button>
                         </td>
                     </tr>
 
