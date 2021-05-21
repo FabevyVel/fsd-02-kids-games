@@ -3,7 +3,7 @@ import {Component} from 'react';
 class NumSeries extends Component{
     
     state = {
-        viewQuestion : 3,
+        viewQuestion : 1,
         Questions : {
             1: '1,2,3,',
             2: '7,8,9',

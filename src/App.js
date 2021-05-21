@@ -2,6 +2,8 @@ import './App.css';
 import DaysOtherDays from './DaysOtherDays/DaysOtherDays';
 import DaysOtherDaysDuplicate from './DaysOtherDaysDuplicate/DaysOtherDaysDuplicate';
 import NumSeries from './NumSeries/NumSeries';
+import Addition from './AdditionSub/AdditionSub'
+import AdditionSub from './AdditionSub/AdditionSub';
 
 function App() {
   return (
@@ -83,6 +85,7 @@ function App() {
       <hr></hr>
       <DaysOtherDaysDuplicate />
       <NumSeries />
+      <AdditionSub />
     </div>
   );
 }
