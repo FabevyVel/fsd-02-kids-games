@@ -46,12 +46,15 @@ class AdditionSub extends Component{
 
         if(this.add() === this.state.result){
             console.log('correct');
-            this.setState({
-                check : "Woot!!!",
-                score : parseInt(this.state.score+1)
-            });
-
-            this.setState({correctAns: '(Correct Answer is:'+ this.add()+')'})
+            setTimeout(() => {
+                this.setState({
+                    check : "Woot!!!",
+                    score : parseInt(this.state.score + 1)
+                });  
+                this.setState({correctAns: '(Answer is:'+ this.add()+')'})  
+              }, 800);
+           
+           
             this.setState({viewQuestion1: this.getRandomNumber()})
             this.setState({viewQuestion2: this.getRandomNumber()})
             
@@ -62,12 +65,13 @@ class AdditionSub extends Component{
         }
         else {
             console.log('Wrong');
-            this.setState({
-                check : "Nope!!!",
-                score : parseInt(this.state.score-1)
-            });
-
-            this.setState({correctAns: '(Correct Answer is:'+ this.add()+')'})
+            setTimeout(() => {
+                this.setState({
+                    check : "Nope!!!",
+                    score : parseInt(this.state.score - 1)
+                });
+                this.setState({correctAns: '(Correct Answer is:'+ this.add()+')'})
+            },800)        
             this.setState({viewQuestion1: this.getRandomNumber()})
             this.setState({viewQuestion2: this.getRandomNumber()})
             
@@ -114,7 +118,7 @@ class AdditionSub extends Component{
                     </tr>
                     <tr>
                         <td>
-                            Your Score:{this.state.score}
+                            Your Score: {this.state.score}
                         </td>
                     </tr>
 
