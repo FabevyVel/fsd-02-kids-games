@@ -2,13 +2,9 @@ import './App.css';
 import DaysOtherDays from './DaysOtherDays/DaysOtherDays';
 import DaysOtherDaysDuplicate from './DaysOtherDaysDuplicate/DaysOtherDaysDuplicate';
 import NumSeries from './NumSeries/NumSeries';
-<<<<<<< HEAD
-import AlphabetsBeforeAndAfter from './AlphabetsBeforeAndAfter/AlphabetsBeforeAndAfter';
-=======
 import Addition from './AdditionSub/AdditionSub'
 import AdditionSub from './AdditionSub/AdditionSub';
->>>>>>> 091415c3d35a8bef2e9e3d9e2df7792dd4512262
-
+import AlphabetsBeforeAndAfter from './AlphabetsBeforeAndAfter/AlphabetsBeforeAndAfter'
 function App() {
   return (
     <div className="App">
@@ -89,12 +85,9 @@ function App() {
       <hr></hr>
       <DaysOtherDaysDuplicate />
       <NumSeries />
-<<<<<<< HEAD
       <hr></hr>
       <AlphabetsBeforeAndAfter />
-=======
       <AdditionSub />
->>>>>>> 091415c3d35a8bef2e9e3d9e2df7792dd4512262
     </div>
   );
 }
